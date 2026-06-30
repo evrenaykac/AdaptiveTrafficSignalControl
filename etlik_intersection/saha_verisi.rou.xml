@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-05-06 22:56:23 by Eclipse SUMO netedit Version 1.24.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Routes -->
+    <routeDistribution id="dagilim_coffeelab">
+        <route id="coffee_to_uni" edges="903105756#7 225638042#1" probability="0.34"/>
+        <route id="coffee_to_hastane" edges="903105756#7 32802166#0" probability="0.33"/>
+        <route id="coffee_to_metro" edges="903105756#7 903179423#1" probability="0.33"/>
+    </routeDistribution>
+    <routeDistribution id="dagilim_hastane">
+        <route id="hastane_to_uni" edges="32802165#6 225638042#1" probability="0.34"/>
+        <route id="hastane_to_coffee" edges="32802165#6 903105753#1" probability="0.33"/>
+        <route id="hastane_to_metro" edges="32802165#6 903179423#1" probability="0.33"/>
+    </routeDistribution>
+    <routeDistribution id="dagilim_metro">
+        <route id="metro_to_coffee" edges="903179422#1 903105753#1" probability="0.50"/>
+        <route id="metro_to_hastane" edges="903179422#1 32802166#0" probability="0.50"/>
+    </routeDistribution>
+    <routeDistribution id="dagilim_universite">
+        <route id="uni_to_coffee" edges="225638044#5 903105753#1" probability="0.34"/>
+        <route id="uni_to_hastane" edges="225638044#5 32802166#0" probability="0.33"/>
+        <route id="uni_to_metro" edges="225638044#5 903179423#1" probability="0.33"/>
+    </routeDistribution>
+    
+    <!-- PERİYOT 1: 09:00 - 09:15 (0 - 1200 saniye) (Sabah Erken Saatler) -->
+    <flow id="flow_coffeelab_p1" begin="0" end="1200" number="320" route="dagilim_coffeelab" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_hastane_p1" begin="0" end="1200" number="260" route="dagilim_hastane" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_uni_p1" begin="0" end="1200" number="280" route="dagilim_universite" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_metro_p1" begin="0" end="1200" number="270" route="dagilim_metro" departLane="best" departSpeed="desired"/>
+
+
+    <!-- PERİYOT 2: 09:15 - 09:30 (1200 - 2400 saniyeleri arası) (Sabah Yoğun Başlangıç) -->
+    <flow id="flow_coffeelab_p2" begin="1200" end="2400" number="340" route="dagilim_coffeelab" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_hastane_p2" begin="1200" end="2400" number="210" route="dagilim_hastane" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_uni_p2" begin="1200" end="2400" number="170" route="dagilim_universite" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_metro_p2" begin="1200" end="2400" number="150" route="dagilim_metro" departLane="best" departSpeed="desired"/>
+
+
+    <!-- PERİYOT 3: 12:00 - 12:15 (2400 - 3600 saniyeleri arası) (Öğlen Erken Saatler) -->
+    <flow id="flow_coffeelab_p3" begin="2400" end="3600" number="260" route="dagilim_coffeelab" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_hastane_p3" begin="2400" end="3600" number="150" route="dagilim_hastane" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_uni_p3" begin="2400" end="3600" number="160" route="dagilim_universite" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_metro_p3" begin="2400" end="3600" number="180" route="dagilim_metro" departLane="best" departSpeed="desired"/>
+
+
+    <!-- PERİYOT 4: 12:15 - 12:30 (3600 - 4800 saniyeleri arası) (Öğlen Yoğun Başlangıç) -->
+    <flow id="flow_coffeelab_p4" begin="3600" end="4800" number="340" route="dagilim_coffeelab" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_hastane_p4" begin="3600" end="4800" number="160" route="dagilim_hastane" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_uni_p4" begin="3600" end="4800" number="220" route="dagilim_universite" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_metro_p4" begin="3600" end="4800" number="190" route="dagilim_metro" departLane="best" departSpeed="desired"/>
+
+
+    <!-- PERİYOT 5: 16:30 - 16:45 (4800 - 6000 saniyeleri arası) (Akşam Erken Saatler) -->
+    <flow id="flow_coffeelab_p5" begin="4800" end="6000" number="480" route="dagilim_coffeelab" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_hastane_p5" begin="4800" end="6000" number="500" route="dagilim_hastane" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_uni_p5" begin="4800" end="6000" number="210" route="dagilim_universite" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_metro_p5" begin="4800" end="6000" number="190" route="dagilim_metro" departLane="best" departSpeed="desired"/>
+
+
+    <!-- PERİYOT 6: 16:45 - 17:00 (6000 - 7200 saniyeleri arası) (Akşam Yoğun Başlangıç) -->
+    <flow id="flow_coffeelab_p6" begin="6000" end="7200" number="420" route="dagilim_coffeelab" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_hastane_p6" begin="6000" end="7200" number="490" route="dagilim_hastane" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_uni_p6" begin="6000" end="7200" number="200" route="dagilim_universite" departLane="best" departSpeed="desired"/>
+    
+    <flow id="flow_metro_p6" begin="6000" end="7200" number="260" route="dagilim_metro" departLane="best" departSpeed="desired"/>
+</routes>
